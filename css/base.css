@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: var(--lh-body);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, p { margin: 0; }
+
+h1 { font-size: var(--fs-page); font-weight: 700; line-height: var(--lh-title); }
+h2 { font-size: var(--fs-section); font-weight: 700; line-height: var(--lh-title); }
+h3 { font-size: var(--fs-card); font-weight: 600; line-height: var(--lh-title); }
+
+.caption { font-size: var(--fs-caption); color: var(--color-text-sub); }
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+:focus-visible { outline: 3px solid var(--color-main); outline-offset: 2px; }
+
+/* 등장 애니메이션 없음 (PRD F2) */
+* { animation: none !important; }
+
+.container { padding: 0 var(--gutter); max-width: 720px; margin: 0 auto; }
+.section { padding: var(--space-4) 0; }
+.section > h2 { margin-bottom: var(--space-2); }

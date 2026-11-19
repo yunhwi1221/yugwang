@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>유광한의원 디자인 기준</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    /* 확인용 페이지 전용 */
+    body { padding-bottom: 80px; }
+    .swatches { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .swatch { border-radius: var(--radius-sm); padding: var(--space-2); min-height: 88px; box-shadow: var(--shadow); font-size: var(--fs-caption); }
+    .stack { display: flex; flex-direction: column; gap: 12px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="section">
+      <h1>디자인 기준</h1>
+      <p class="caption">375px 모바일 기준 확인용 페이지예요.</p>
+    </section>
+
+    <section class="section">
+      <h2>색 4개</h2>
+      <div class="swatches">
+        <div class="swatch" style="background:var(--color-bg);border:1px solid var(--color-line)"><strong>배경</strong><br>#FBF8F3</div>
+        <div class="swatch" style="background:var(--color-main);color:var(--color-text)"><strong>메인</strong><br>#4A90B8 (아이콘·장식)</div>
+        <div class="swatch" style="background:var(--color-main-strong);color:#fff"><strong>메인 진한 톤</strong><br>#2F7096 (글자·버튼)</div>
+        <div class="swatch" style="background:var(--color-point);color:var(--color-text)"><strong>포인트</strong><br>#E8875A</div>
+        <div class="swatch" style="background:var(--color-text);color:#fff"><strong>글자</strong><br>#2F2A26</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>글자 크기 5단계</h2>
+      <div class="stack">
+        <h1>페이지 제목 28</h1>
+        <h2>섹션 제목 22</h2>
+        <h3>카드 제목 19</h3>
+        <p>본문 17. 허리가 아프고 오래 앉아 있기 힘드세요? 증상부터 편하게 확인해 보세요.</p>
+        <p class="caption">보조·캡션 14</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>버튼</h2>
+      <div class="stack">
+        <a class="btn btn--point btn--block" href="#">예약하기</a>
+        <a class="btn btn--block" href="tel:0000000000">전화하기</a>
+        <a class="btn btn--outline btn--block" href="#">길찾기</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>카드와 아이콘 카드</h2>
+      <div class="stack">
+        <div class="card">
+          <h3>일반 카드</h3>
+          <p>흰색 배경, 14px 모서리, 아주 옅은 그림자예요.</p>
+        </div>
+        <div class="grid-2">
+          <a class="icon-card" href="#">
+            <svg class="icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M8 7c0 2 2 3 4 3s4 1 4 3-2 3-4 3-4 1-4 3"/></svg>
+            <span class="icon-card__title">목·허리 디스크·협착증</span>
+          </a>
+          <a class="icon-card" href="#">
+            <svg class="icon-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12c0-4 3-7 7-7s7 3 7 7-3 7-7 7-7-3-7-7z"/><path d="M9 12h6"/></svg>
+            <span class="icon-card__title">코막힘·비염·기침</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>강점 숫자 카드</h2>
+      <div class="grid-2">
+        <div class="card stat"><span class="stat__num">1995</span><span class="stat__label">년부터 진료해요</span></div>
+        <div class="card stat"><span class="stat__num">1시간</span><span class="stat__label">주차 무료예요</span></div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-bar" aria-label="빠른 연락">
+    <a class="btn" href="#">톡톡</a>
+    <a class="btn btn--point" href="#">예약</a>
+    <a class="btn" href="tel:0000000000">전화</a>
+  </nav>
+</body>
+</html>
